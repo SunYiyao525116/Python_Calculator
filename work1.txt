@@ -1,0 +1,45 @@
+def add(a,b):
+    result = a + b
+    return result
+
+def subtract(a,b):
+    result = a - b
+    return result
+
+def multiply(a,b):
+    result = a*b
+    return result
+
+def divide(a,b):
+    result = a/b
+    return result
+
+print("Select operation: ")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+choice = int(input("Enter your choice: (1/2/3/4)"))
+
+if choice in [1,2,3,4]:
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
+
+    if choice == 1:
+        print("num1 + num2 =",add(a,b))
+
+    elif choice == 2:
+        print("num1 + num2 =",subtract(a,b))
+
+    elif choice == 3:
+        print("num1 + num2 =",multiply(a,b))
+
+    elif choice == 4:
+        print("num1 + num2 =",divide(a,b))
+
+
+
+    
+
+
